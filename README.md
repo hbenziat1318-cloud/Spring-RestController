@@ -40,7 +40,7 @@ SpringRestController-master/
 - `COURANT` - Compte courant
 - `EPARGNE` - Compte épargne
 
-## 🛠️ Technologies Utilisées
+##  Technologies Utilisées
 
 - **Spring Boot** - Framework principal
 - **Spring Data JPA** - Persistance des données
