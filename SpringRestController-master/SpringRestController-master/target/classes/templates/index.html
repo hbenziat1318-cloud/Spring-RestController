@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Comptes Bancaires</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏦 Gestion des Comptes Bancaires</h1>
+            <p class="subtitle">Interface de gestion moderne et intuitive</p>
+            <div class="header-stats" id="headerStats" style="display: none;">
+                <div class="stat-item">
+                    <span class="stat-label">Total Comptes</span>
+                    <span class="stat-value" id="totalComptes">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Solde Total</span>
+                    <span class="stat-value" id="soldeTotal">0 €</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <!-- Formulaire d'ajout/modification -->
+            <section class="form-section">
+                <h2 id="form-title">Ajouter un nouveau compte</h2>
+                <form id="compteForm" class="compte-form">
+                    <input type="hidden" id="compteId" name="id">
+                    
+                    <div class="form-group">
+                        <label for="solde">Solde (€)</label>
+                        <input type="number" id="solde" name="solde" step="0.01" required 
+                               placeholder="Ex: 1000.00" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dateCreation">Date de création</label>
+                        <input type="date" id="dateCreation" name="dateCreation" required 
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Type de compte</label>
+                        <select id="type" name="type" required class="form-input">
+                            <option value="">Sélectionner un type</option>
+                            <option value="COURANT">Compte Courant</option>
+                            <option value="EPARGNE">Compte Épargne</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" id="submitBtn" class="btn btn-primary">Ajouter</button>
+                        <button type="button" id="cancelBtn" class="btn btn-secondary" style="display: none;">Annuler</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Liste des comptes -->
+            <section class="list-section">
+                <div class="section-header">
+                    <h2>Liste des comptes</h2>
+                    <button onclick="loadComptes()" class="btn btn-refresh">🔄 Actualiser</button>
+                </div>
+                <div id="loading" class="loading" style="display: none;">Chargement...</div>
+                <div id="error-message" class="error-message" style="display: none;"></div>
+                <div id="comptes-container" class="comptes-grid"></div>
+            </section>
+        </div>
+    </div>
+
+    <script th:src="@{/js/app.js}"></script>
+</body>
+</html>
+
