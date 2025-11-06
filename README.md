@@ -70,6 +70,8 @@ Disponible à : [http://localhost:8082/h2-console](http://localhost:8082/h2-cons
 <br>
 <h3>http://localhost:8082/h2-console/login.jsp?jsessionid=672fb26a3dd6c29ad593a0bbdc9af066</h3>
 <img width="1918" height="1028" alt="H2 CONSOLE" src="https://github.com/user-attachments/assets/7aebce04-f09b-426f-9006-440b60a67027" />
+<img width="1918" height="971" alt="H2 CONSOL" src="https://github.com/user-attachments/assets/0a62cc51-a36f-43df-ad96-096ec774af4b" />
+
 <br>
 <h3>http://localhost:8082/banque/comptes</h3>
 <img width="1913" height="1031" alt="localhost 80820banque comptes" src="https://github.com/user-attachments/assets/70bd6a3d-14bb-42d4-8b3f-1a87eaaf691a" />
@@ -78,6 +80,7 @@ Disponible à : [http://localhost:8082/h2-console](http://localhost:8082/h2-cons
  <img width="1918" height="1008" alt="localhost api" src="https://github.com/user-attachments/assets/ad032caa-696b-41ad-b748-0eaa84a55228" />
 <br>
 <h3>video de la console</h3>
+
 https://github.com/user-attachments/assets/6cd8c155-7a6d-4e46-ad58-e62ca7d6c483
 
 
